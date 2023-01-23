@@ -43,7 +43,13 @@ public class ProjectConfig {
         return 16;
     }
 
+
+
+
+
     /*---------------------EXAMPLE-2-------------------------------*/
+
+
     @Bean
     Vehicle vehicle1() {
         var veh = new Vehicle();
@@ -64,6 +70,36 @@ public class ProjectConfig {
         veh.setName("Ferrari");
         return veh;
     }
+
+
+
+
+    /*---------------------EXAMPLE-3-------------------------------*/
+
+
+    /* ALL APPROACHES ARE VALID*/
+    @Bean(name = "audiVehicle")
+    Vehicle vehicle4() {
+        var veh = new Vehicle();
+        veh.setName("Audi");
+        return veh;
+    }
+
+    @Bean(value = "hondaVehicle")
+    Vehicle vehicle5() {
+        var veh = new Vehicle();
+        veh.setName("Honda");
+        return veh;
+    }
+
+    @Bean("ferrariVehicle")
+    Vehicle vehicle6() {
+        var veh = new Vehicle();
+        veh.setName("Ferrari");
+        return veh;
+    }
+
+
 }
 
 
