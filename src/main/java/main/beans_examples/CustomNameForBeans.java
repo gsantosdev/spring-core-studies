@@ -1,4 +1,4 @@
-package main;
+package main.beans_examples;
 
 import beans.Vehicle;
 import config.ProjectConfig;

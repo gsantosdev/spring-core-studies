@@ -1,4 +1,4 @@
-package main;
+package main.beans_examples;
 
 import beans.Vehicle;
 import config.ProjectConfig;
@@ -12,7 +12,7 @@ public class NoUniqueBeanDefinitionExample {
         var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
 
         try {
-            Vehicle veh = context.getBean(Vehicle.class);
+            context.getBean(Vehicle.class);
         } catch (NoUniqueBeanDefinitionException e) {
             System.out.println("Throws exception because the specific bean name wasn't specified");
         }

@@ -1,7 +1,6 @@
-package main;
+package main.beans_examples;
 
 import beans.Vehicle;
-import config.ProjectConfig;
 import config.ProjectConfigPrimaryExample;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
