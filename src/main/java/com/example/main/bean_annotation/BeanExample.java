@@ -1,7 +1,7 @@
 package com.example.main.bean_annotation;
 
 import com.example.beans.Vehicle;
-import com.example.config.ProjectConfig;
+import com.example.config.ProjectConfigBeanExample;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class BeanExample {
@@ -14,7 +14,7 @@ public class BeanExample {
 
         /*-----------------------------------------------------------------------------------*/
 
-        var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
+        var context = new AnnotationConfigApplicationContext(ProjectConfigBeanExample.class);
         Vehicle veh = context.getBean(Vehicle.class);
         System.out.println("Vehicle name from Spring Context is: " + veh.getName());
 

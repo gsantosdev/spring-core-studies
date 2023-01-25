@@ -1,14 +1,14 @@
 package com.example.main.bean_annotation;
 
 import com.example.beans.Vehicle;
-import com.example.config.ProjectConfig;
+import com.example.config.ProjectConfigBeanExample;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class CustomNameForBeans {
 
     public static void main(String[] args) {
 
-        var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
+        var context = new AnnotationConfigApplicationContext(ProjectConfigBeanExample.class);
 
         Vehicle audi = context.getBean("audiVehicle",Vehicle.class);
         System.out.println("Vehicle name from Spring Context is: " + audi.getName());

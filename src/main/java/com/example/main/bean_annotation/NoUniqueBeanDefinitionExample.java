@@ -1,7 +1,7 @@
 package com.example.main.bean_annotation;
 
 import com.example.beans.Vehicle;
-import com.example.config.ProjectConfig;
+import com.example.config.ProjectConfigBeanExample;
 import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -9,7 +9,7 @@ public class NoUniqueBeanDefinitionExample {
 
     public static void main(String[] args) {
 
-        var context = new AnnotationConfigApplicationContext(ProjectConfig.class);
+        var context = new AnnotationConfigApplicationContext(ProjectConfigBeanExample.class);
 
         try {
             context.getBean(Vehicle.class);

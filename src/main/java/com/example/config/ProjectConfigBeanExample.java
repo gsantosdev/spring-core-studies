@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
     So spring container can process the class and generate spring beans to be used in the application.
  */
 @Configuration
-public class ProjectConfig {
+public class ProjectConfigBeanExample {
 
     /*---------------------UsingBeanExamples-------------------------------*/
 
