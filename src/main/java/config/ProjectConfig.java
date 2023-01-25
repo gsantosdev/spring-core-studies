@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class ProjectConfig {
 
-    /*---------------------EXAMPLE-1-------------------------------*/
+    /*---------------------UsingBeanExamples-------------------------------*/
 
     /*
         @Bean Annotation, wich lets Spring know that it needs to call this method when it initializes its context and
@@ -47,7 +47,7 @@ public class ProjectConfig {
 
 
 
-    /*---------------------EXAMPLE-2-------------------------------*/
+    /*---------------------NoUniqueBeansExample-------------------------------*/
 
 
     @Bean
@@ -74,7 +74,7 @@ public class ProjectConfig {
 
 
 
-    /*---------------------EXAMPLE-3-------------------------------*/
+    /*---------------------CustomNamingExample-------------------------------*/
 
 
     /* ALL APPROACHES ARE VALID*/
