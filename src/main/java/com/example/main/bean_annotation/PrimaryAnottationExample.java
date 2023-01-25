@@ -1,7 +1,7 @@
-package main.beans_examples;
+package com.example.main.bean_annotation;
 
-import beans.Vehicle;
-import config.ProjectConfigPrimaryExample;
+import com.example.beans.Vehicle;
+import com.example.config.ProjectConfigPrimaryExample;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class PrimaryAnottationExample {

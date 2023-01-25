@@ -1,4 +1,4 @@
-package beans;
+package com.example.beans;
 
 
 import lombok.Getter;
