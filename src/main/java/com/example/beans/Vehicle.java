@@ -9,4 +9,5 @@ import lombok.Setter;
 public class Vehicle {
 
     private String name;
+
 }
